@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="groovy-3.0.7" type="groovy-library">
+    <properties version="3.0.7" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/groovy-3.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/rs2xml.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/groovy-3.0.7-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/rs2xml.jar!/src" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,330 @@
+@startuml
+class quanlidulich.HotelPhuYen {
+~ JLabel l1
+~ JLabel caption
+~ Thread th
++ <<Create>> HotelPhuYen()
++ void run()
++ {static} void main(String[])
+}
+class quanlidulich.HotelHaLong {
+~ JLabel l1
+~ JLabel caption
+~ Thread th
++ <<Create>> HotelHaLong()
++ void run()
++ {static} void main(String[])
+}
+class quanlidulich.DeleteCustomer {
+- JPanel contentPane
+~ Choice c1
++ <<Create>> DeleteCustomer()
++ {static} void main(String[])
+}
+class quanlidulich.Home {
+~ String username
++ <<Create>> Home(String)
++ {static} void main(String[])
+}
+class quanlidulich.ViewCustomers {
+~ Connection conn
+- JPanel contentPane
+- JTable table
+- JLabel lblAvailability
+- JLabel lblCleanStatus
+- JLabel lblNewLabel
+- JLabel lblNewLabel_1
+- JLabel lblRoomNumber
+- JLabel lblId
++ <<Create>> ViewCustomers()
++ {static} void main(String[])
+}
+class quanlidulich.HotelThapNhan {
+~ JLabel l1
+~ JLabel caption
+~ Thread th
++ <<Create>> HotelThapNhan()
++ void run()
++ {static} void main(String[])
+}
+class quanlidulich.BookPackage {
+- JPanel contentPane
+~ JTextField t1
+~ Choice c1
++ <<Create>> BookPackage(String)
++ {static} void main(String[])
+}
+class quanlidulich.DesPhuQuoc {
+~ JLabel l1
+~ JLabel caption
+~ Thread th
++ <<Create>> DesPhuQuoc()
++ void run()
++ {static} void main(String[])
+}
+class quanlidulich.ViewAdCombo {
+~ Connection conn
+- JPanel contentPane
+- JTable table
+- JLabel lblAvailability
+- JLabel lblCleanStatus
+- JLabel lblNewLabel
+- JLabel lblNewLabel_1
+- JLabel lbf
+- JLabel lblId
++ <<Create>> ViewAdCombo(String)
++ {static} void main(String[])
+}
+class quanlidulich.DesHalong {
+~ JLabel l1
+~ JLabel caption
+~ Thread th
++ <<Create>> DesHalong()
++ void run()
++ {static} void main(String[])
+}
+class quanlidulich.Payment {
++ <<Create>> Payment()
++ {static} void main(String[])
+}
+class quanlidulich.CheckPackage {
++ <<Create>> CheckPackage(String)
++ {static} void main(String[])
++ JPanel createPackage(String[],String)
+}
+class quanlidulich.DesHoiAn {
+~ JLabel l1
+~ JLabel caption
+~ Thread th
++ <<Create>> DesHoiAn()
++ void run()
++ {static} void main(String[])
+}
+class quanlidulich.HotelPhoCo {
+~ JLabel l1
+~ JLabel caption
+~ Thread th
++ <<Create>> HotelPhoCo()
++ void run()
++ {static} void main(String[])
+}
+class quanlidulich.ViewAdHotel {
+~ Connection conn
+- JPanel contentPane
+- JTable table
+- JLabel lblAvailability
+- JLabel lblCleanStatus
+- JLabel lblNewLabel
+- JLabel lblNewLabel_1
+- JLabel lbf
+- JLabel lblId
++ <<Create>> ViewAdHotel(String)
++ {static} void main(String[])
+}
+class quanlidulich.HotelHoiAn {
+~ JLabel l1
+~ JLabel caption
+~ Thread th
++ <<Create>> HotelHoiAn()
++ void run()
++ {static} void main(String[])
+}
+class quanlidulich.AddCustomer {
+~ Connection conn
+~ PreparedStatement pst
+- JPanel contentPane
+- JTextField t1
+~ JComboBox comboBox
+~ JRadioButton r1
+~ Choice c1
++ <<Create>> AddCustomer(String)
++ {static} void main(String[])
+}
+class quanlidulich.Paytm {
+~ <<Create>> Paytm()
++ {static} void main(String[])
+}
+class quanlidulich.CheckHotels {
+~ JLabel l1
+~ JLabel caption
+~ Thread th
++ <<Create>> CheckHotels()
++ void run()
++ {static} void main(String[])
+}
+class quanlidulich.Login {
+- JPanel panel
+- JTextField textField
+- JPasswordField passwordField
+- JButton b1
++ <<Create>> Login()
++ void actionPerformed(ActionEvent)
++ {static} void main(String[])
+}
+class quanlidulich.ViewAdDes {
+~ Connection conn
+- JPanel contentPane
+- JTable table
+- JLabel lblAvailability
+- JLabel lblCleanStatus
+- JLabel lblNewLabel
+- JLabel lblNewLabel_1
+- JLabel lbf
+- JLabel lblId
++ <<Create>> ViewAdDes(String)
++ {static} void main(String[])
+}
+class quanlidulich.Conn {
+~ Connection conn
+~ Statement s
++ <<Create>> Conn()
+}
+class quanlidulich.DesPhuYen {
+~ JLabel l1
+~ JLabel caption
+~ Thread th
++ <<Create>> DesPhuYen()
++ void run()
++ {static} void main(String[])
+}
+class quanlidulich.HotelPhuQuoc {
+~ JLabel l1
+~ JLabel caption
+~ Thread th
++ <<Create>> HotelPhuQuoc()
++ void run()
++ {static} void main(String[])
+}
+class quanlidulich.BookHotel {
+- JPanel contentPane
+~ JTextField t1
+~ Choice c1
++ <<Create>> BookHotel(String)
++ {static} void main(String[])
+}
+class quanlidulich.UpdateCustomer {
+~ Connection conn
+~ PreparedStatement pst
+- JPanel contentPane
+- JTextField t1
++ <<Create>> UpdateCustomer(String)
++ {static} void main(String[])
+}
+class quanlidulich.Signup {
+- JPanel contentPane
+- JTextField textField
+- JTextField textField_1
+- JPasswordField textField_2
+- JTextField textField_3
+- JButton b1
+- JComboBox comboBox
++ <<Create>> Signup()
++ {static} void main(String[])
++ void actionPerformed(ActionEvent)
+}
+class quanlidulich.Splash {
++ {static} void main(String[])
+}
+class quanlidulich.SplashFrame {
+~ Thread t1
+~ <<Create>> SplashFrame()
++ void run()
+}
+class quanlidulich.About {
+~ JButton b1
+~ JLabel l1
+~ Font f
+~ TextArea t1
+~ String s
++ <<Create>> About()
++ void actionPerformed(ActionEvent)
++ {static} void main(String[])
+}
+class quanlidulich.Loading {
+- JPanel contentPane
+- JProgressBar progressBar
+~ Connection conn
+~ String username
+~ int s
+~ Thread th
++ <<Create>> Loading(String)
++ {static} void main(String[])
++ void setUploading()
++ void run()
+}
+class quanlidulich.ForgotPassword {
+- JPanel contentPane
+- JTextField t1
+- JButton b1
++ <<Create>> ForgotPassword()
++ {static} void main(String[])
++ void actionPerformed(ActionEvent)
+}
+class quanlidulich.bookPlace {
+- JPanel contentPane
+~ JTextField t1
+~ Choice c1
+~ Conn c
++ <<Create>> bookPlace(String)
++ {static} void main(String[])
+}
+class quanlidulich.DeleteHotel {
+- JPanel contentPane
+~ Choice c1
++ <<Create>> DeleteHotel(String)
++ {static} void main(String[])
+}
+class quanlidulich.Logout {
+}
+
+
+quanlidulich.Runnable <|.. quanlidulich.HotelPhuYen
+quanlidulich.JFrame <|-- quanlidulich.HotelPhuYen
+quanlidulich.Runnable <|.. quanlidulich.HotelHaLong
+quanlidulich.JFrame <|-- quanlidulich.HotelHaLong
+quanlidulich.JFrame <|-- quanlidulich.DeleteCustomer
+quanlidulich.JFrame <|-- quanlidulich.Home
+javax.swing.JFrame <|-- quanlidulich.ViewCustomers
+quanlidulich.Runnable <|.. quanlidulich.HotelThapNhan
+quanlidulich.JFrame <|-- quanlidulich.HotelThapNhan
+quanlidulich.JFrame <|-- quanlidulich.BookPackage
+quanlidulich.Runnable <|.. quanlidulich.DesPhuQuoc
+quanlidulich.JFrame <|-- quanlidulich.DesPhuQuoc
+javax.swing.JFrame <|-- quanlidulich.ViewAdCombo
+quanlidulich.Runnable <|.. quanlidulich.DesHalong
+quanlidulich.JFrame <|-- quanlidulich.DesHalong
+quanlidulich.JFrame <|-- quanlidulich.Payment
+quanlidulich.JFrame <|-- quanlidulich.CheckPackage
+quanlidulich.Runnable <|.. quanlidulich.DesHoiAn
+quanlidulich.JFrame <|-- quanlidulich.DesHoiAn
+quanlidulich.Runnable <|.. quanlidulich.HotelPhoCo
+quanlidulich.JFrame <|-- quanlidulich.HotelPhoCo
+javax.swing.JFrame <|-- quanlidulich.ViewAdHotel
+quanlidulich.Runnable <|.. quanlidulich.HotelHoiAn
+quanlidulich.JFrame <|-- quanlidulich.HotelHoiAn
+quanlidulich.JFrame <|-- quanlidulich.AddCustomer
+quanlidulich.JFrame <|-- quanlidulich.Paytm
+quanlidulich.Runnable <|.. quanlidulich.CheckHotels
+quanlidulich.JFrame <|-- quanlidulich.CheckHotels
+quanlidulich.ActionListener <|.. quanlidulich.Login
+quanlidulich.JFrame <|-- quanlidulich.Login
+javax.swing.JFrame <|-- quanlidulich.ViewAdDes
+quanlidulich.Runnable <|.. quanlidulich.DesPhuYen
+quanlidulich.JFrame <|-- quanlidulich.DesPhuYen
+quanlidulich.Runnable <|.. quanlidulich.HotelPhuQuoc
+quanlidulich.JFrame <|-- quanlidulich.HotelPhuQuoc
+quanlidulich.JFrame <|-- quanlidulich.BookHotel
+quanlidulich.JFrame <|-- quanlidulich.UpdateCustomer
+quanlidulich.ActionListener <|.. quanlidulich.Signup
+quanlidulich.JFrame <|-- quanlidulich.Signup
+quanlidulich.Runnable <|.. quanlidulich.SplashFrame
+quanlidulich.JFrame <|-- quanlidulich.SplashFrame
+quanlidulich.ActionListener <|.. quanlidulich.About
+javax.swing.JFrame <|-- quanlidulich.About
+quanlidulich.Runnable <|.. quanlidulich.Loading
+quanlidulich.JFrame <|-- quanlidulich.Loading
+quanlidulich.ActionListener <|.. quanlidulich.ForgotPassword
+quanlidulich.JFrame <|-- quanlidulich.ForgotPassword
+quanlidulich.JFrame <|-- quanlidulich.bookPlace
+quanlidulich.JFrame <|-- quanlidulich.DeleteHotel
+@enduml
